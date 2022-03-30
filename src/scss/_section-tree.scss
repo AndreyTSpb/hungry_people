@@ -1,82 +1,85 @@
 .section-tree{
     height: 675px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys3-bg.png);
+    background-size: cover; /* Фон занимает всю доступную площадь */
     &>div{
         &>div{
-            position: relative;
-            .img-block{
+            &>div{
                 position: relative;
-                display: block;
-                margin: 0 auto;
-                width: 475px;
-                height: 475px;
-                text-align: center;
-
-                img{
+                .img-block{
+                    position: relative;
                     display: block;
                     margin: 0 auto;
                     width: 475px;
                     height: 475px;
+                    text-align: center;
+    
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        width: 475px;
+                        height: 475px;
+                    }
                 }
-            }
-            .yellow_squer{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-            .black-rectangle{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 80px;
-                height: 400px;
-                background: #000000;
-                border-radius: 0px 5px 5px 0px;
-                text-align: left;
-                p{
+                .yellow_squer{
                     position: absolute;
-                    display: block;
-                    writing-mode: tb-rl;
-                    font-family: 'Banny';
-                    font-size: 24px;
-                    line-height: 12px;
-                    /* or 50% */
-
-                    //display: flex;
-                    //align-items: center;
-                    text-indent: 20px;
-                    text-transform: uppercase;
-
-                    color: #FFFFFF;
-
-                    
-                }
-            }
-            &:first-child{
-                .yellow_squer{
-                    left: 0%;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
                 .black-rectangle{
-                        right: 0%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 80px;
+                    height: 400px;
+                    background: #000000;
+                    border-radius: 0px 5px 5px 0px;
+                    text-align: left;
                     p{
-                        transform: rotate(-180deg);
-                        left: 0%;
-                        top: 0%;
+                        position: absolute;
+                        display: block;
+                        writing-mode: tb-rl;
+                        font-family: 'Banny';
+                        font-size: 24px;
+                        line-height: 12px;
+                        /* or 50% */
+    
+                        //display: flex;
+                        //align-items: center;
+                        text-indent: 20px;
+                        text-transform: uppercase;
+    
+                        color: #FFFFFF;
+    
+                        
                     }
-                    
                 }
-            }
-            &:last-child{
-                .yellow_squer{
-                    right: 0%;
-                }
-                .black-rectangle{
-                    p{
-                        transform: rotate(180deg);
-                        left: 0%;
-                        bottom: 0%;
+                &:first-child{
+                    .yellow_squer{
+                        left: -20%;
                     }
-                    
+                    .black-rectangle{
+                            right: 0%;
+                        p{
+                            transform: rotate(-180deg);
+                            left: 0%;
+                            top: 0%;
+                        }
+                        
+                    }
+                }
+                &:last-child{
+                    .yellow_squer{
+                        right: -20%;
+                    }
+                    .black-rectangle{
+                        p{
+                            transform: rotate(180deg);
+                            left: 0%;
+                            bottom: 0%;
+                        }
+                        
+                    }
                 }
             }
         }

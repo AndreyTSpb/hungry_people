@@ -1,8 +1,8 @@
 header{
     margin: 0 auto;
-    max-width: 1440px;
     height: 800px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.png);
+    background-size: cover; /* Фон занимает всю доступную площадь */
     position: relative;
     .label{
         display: block;

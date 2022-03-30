@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   position: relative;
   width: 100%;
@@ -121,11 +123,12 @@ nav .menu-item a {
 
 header {
   margin: 0 auto;
-  max-width: 1440px;
   height: 800px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/header-bg.png);
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.png);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.png);
+  background-size: cover;
+  /* Фон занимает всю доступную площадь */
   position: relative;
 }
 
@@ -205,11 +208,12 @@ header .header_title__btn .btn-primary:hover {
 }
 
 .section-two {
-  max-width: 1440px;
   margin: 0 auto;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/specialtys-bg.png);
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys-bg.png);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys-bg.png);
+  background-size: cover;
+  /* Фон занимает всю доступную площадь */
 }
 
 .section-two__img {
@@ -257,13 +261,15 @@ header .header_title__btn .btn-primary:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/specialtys3-bg.png);
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys3-bg.png);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys3-bg.png);
+  background-size: cover;
+  /* Фон занимает всю доступную площадь */
 }
 
-.section-tree > div > div {
+.section-tree > div > div > div {
   position: relative;
 }
 
-.section-tree > div > div .img-block {
+.section-tree > div > div > div .img-block {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -272,14 +278,14 @@ header .header_title__btn .btn-primary:hover {
   text-align: center;
 }
 
-.section-tree > div > div .img-block img {
+.section-tree > div > div > div .img-block img {
   display: block;
   margin: 0 auto;
   width: 475px;
   height: 475px;
 }
 
-.section-tree > div > div .yellow_squer {
+.section-tree > div > div > div .yellow_squer {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -287,7 +293,7 @@ header .header_title__btn .btn-primary:hover {
           transform: translateY(-50%);
 }
 
-.section-tree > div > div .black-rectangle {
+.section-tree > div > div > div .black-rectangle {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -300,7 +306,7 @@ header .header_title__btn .btn-primary:hover {
   text-align: left;
 }
 
-.section-tree > div > div .black-rectangle p {
+.section-tree > div > div > div .black-rectangle p {
   position: absolute;
   display: block;
   -webkit-writing-mode: tb-rl;
@@ -315,15 +321,15 @@ header .header_title__btn .btn-primary:hover {
   color: #FFFFFF;
 }
 
-.section-tree > div > div:first-child .yellow_squer {
-  left: 0%;
+.section-tree > div > div > div:first-child .yellow_squer {
+  left: -20%;
 }
 
-.section-tree > div > div:first-child .black-rectangle {
+.section-tree > div > div > div:first-child .black-rectangle {
   right: 0%;
 }
 
-.section-tree > div > div:first-child .black-rectangle p {
+.section-tree > div > div > div:first-child .black-rectangle p {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -331,16 +337,75 @@ header .header_title__btn .btn-primary:hover {
   top: 0%;
 }
 
-.section-tree > div > div:last-child .yellow_squer {
-  right: 0%;
+.section-tree > div > div > div:last-child .yellow_squer {
+  right: -20%;
 }
 
-.section-tree > div > div:last-child .black-rectangle p {
+.section-tree > div > div > div:last-child .black-rectangle p {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   left: 0%;
   bottom: 0%;
+}
+
+.form-contact {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.section-slider {
+  height: 675px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/specialtys3-bg.png);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys3-bg.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialtys3-bg.png);
+  background-size: cover;
+  /* Фон занимает всю доступную площадь */
+}
+
+.section-slider__img {
+  position: relative;
+  text-align: right;
+}
+
+.section-slider__img .yellow_squer {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section-slider__img img {
+  width: 475px;
+  height: 475px;
+  -webkit-filter: drop-shadow(0px 0px 50px #000000);
+          filter: drop-shadow(0px 0px 50px #000000);
+  border-radius: 5px;
+}
+
+.section-slider__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+}
+
+.section-slider__text .hr_rectangle {
+  position: none;
+}
+
+.photo-galerie {
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .photo-galerie img {
