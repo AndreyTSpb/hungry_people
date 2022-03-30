@@ -1,0 +1,23 @@
+footer{
+    //width: 1440px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    h6{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        /* or 100% */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        
+
+        width: 300px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

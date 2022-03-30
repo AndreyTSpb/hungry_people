@@ -1,0 +1,26 @@
+.btn_down{
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 60px;
+    height: 60px;
+}
+
+.btn-primary{
+    background: $yellow;
+    border-color: $yellow;
+    &:hover{
+        background: #FFFFFF;
+        color: $yellow;
+        border-color: $yellow;
+    }
+}
+.btn-outline-primary{
+    border: 1px solid $yellow;
+    color: $yellow;
+    &:hover{
+        background: $yellow;
+        color: #FFFFFF;
+        border-color: $yellow;
+    }
+}

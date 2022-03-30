@@ -1,0 +1,32 @@
+nav{
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-item{
+            display: block;
+            width: 150px;
+            height: 100px;
+            //border: 1px solid gray;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: lowercase;
+            /* or 150% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            a{
+                text-align: center;
+                margin: 0 auto;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            
+            
+        }
+    }
+}

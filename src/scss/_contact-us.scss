@@ -1,0 +1,8 @@
+.contact-us{
+    max-width: 1440px;
+    margin: 0 auto;
+    &__address{
+        display: flex;
+        justify-content: space-between;
+    }
+}

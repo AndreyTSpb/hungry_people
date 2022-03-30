@@ -1,0 +1,17 @@
+body{
+    position: relative;
+    width: 100%;
+    .container{
+        width: 1240px;
+    }
+}
+h2{
+    /* Heading 2 */
+    font-family: 'Banny';
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+
+    text-align: center;
+    text-transform: uppercase;
+}
